@@ -1,0 +1,882 @@
+/* =========================================
+   GENERAL STYLING
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fc;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   KEYFRAME ANIMATIONS
+========================================= */
+
+@keyframes fadeIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+@keyframes slideDown {
+
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+@keyframes pulse {
+
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.08);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+
+}
+
+@keyframes notificationAnimation {
+
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    20% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    80% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+header {
+    background-color: #1e3a8a;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+    animation: slideDown 1s ease;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 17px;
+}
+
+
+/* =========================================
+   NAVIGATION
+========================================= */
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    background-color: #172554;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 18px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #3b82f6;
+    transform: translateY(-3px);
+}
+
+
+/* =========================================
+   SECTIONS
+========================================= */
+
+section {
+    background-color: white;
+    width: 90%;
+    max-width: 1200px;
+    margin: 25px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.8s ease;
+}
+
+section h2 {
+    color: #1e3a8a;
+    margin-bottom: 15px;
+    font-size: 28px;
+}
+
+section h3 {
+    color: #2563a6;
+    margin: 15px 0;
+}
+
+
+/* =========================================
+   HOME
+========================================= */
+
+#home {
+    text-align: center;
+}
+
+#home img {
+    width: 500px;
+    max-width: 100%;
+    height: auto;
+    margin: 15px;
+    border-radius: 10px;
+    transition:
+        transform 0.5s ease,
+        opacity 0.5s ease;
+}
+
+#home img:hover {
+    transform: scale(1.04);
+    opacity: 0.9;
+}
+
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+button {
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 12px 20px;
+    transition:
+        transform 0.3s ease,
+        background-color 0.3s ease,
+        opacity 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+#welcomeButton {
+    background-color: #2563eb;
+    color: white;
+    margin-top: 15px;
+}
+
+#employeeButton {
+    background-color: #16a34a;
+    color: white;
+    margin-top: 20px;
+}
+
+#departmentButton {
+    background-color: #7c3aed;
+    color: white;
+    margin-top: 10px;
+}
+
+
+/* =========================================
+   EMPLOYEE INFORMATION
+========================================= */
+
+.employee-container {
+    position: relative;
+    background-color: #f8faff;
+    border: 2px solid #dbe3f0;
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 25px;
+}
+
+.employee-info {
+    position: relative;
+    left: 15px;
+    width: 85%;
+    padding: 15px;
+    background-color: #eef5ff;
+    border-left: 5px solid #2563eb;
+    border-radius: 5px;
+}
+
+.employee-status {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #22c55e;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    animation: pulse 2s infinite;
+}
+
+
+/* =========================================
+   TABLE
+========================================= */
+
+.table-container,
+.api-table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    min-width: 700px;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th {
+    background-color: #1e3a8a;
+    color: white;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #eff6ff;
+}
+
+tr:hover {
+    background-color: #dbeafe;
+    transition: 0.3s;
+}
+
+
+/* =========================================
+   INFORMATION CARD
+========================================= */
+
+.info-card {
+    background-color: #eef5ff;
+    border-left: 5px solid #2563eb;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.info-card.hidden {
+    display: none;
+}
+
+.close-card {
+    position: absolute;
+    top: 8px;
+    right: 15px;
+    font-size: 28px;
+    color: #dc3545;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.close-card:hover {
+    transform: rotate(90deg) scale(1.2);
+}
+
+
+/* =========================================
+   DEPARTMENTS
+========================================= */
+
+ul,
+ol {
+    padding-left: 30px;
+    margin: 15px 0;
+}
+
+li {
+    padding: 5px;
+}
+
+.department-note {
+    margin-top: 20px;
+    padding: 18px;
+    background-color: #eaf4ff;
+    border-left: 5px solid #2563eb;
+    border-radius: 6px;
+}
+
+.department-note.hidden {
+    display: none;
+}
+
+
+/* =========================================
+   APPLICATION FORM
+========================================= */
+
+fieldset {
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+legend {
+    color: #1e3a8a;
+    font-weight: bold;
+    padding: 5px;
+}
+
+form p {
+    margin: 15px 0;
+}
+
+input,
+select,
+textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-family: Arial, sans-serif;
+    transition:
+        border-color 0.3s ease,
+        transform 0.3s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border: 2px solid #2563eb;
+    outline: none;
+    transform: scale(1.01);
+}
+
+input:valid,
+select:valid,
+textarea:valid {
+    border-color: #22c55e;
+}
+
+input:invalid,
+select:invalid,
+textarea:invalid {
+    border-color: #dc3545;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="number"],
+input[type="file"],
+select,
+textarea {
+    width: 100%;
+    max-width: 500px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    display: inline-block;
+    width: auto;
+    margin-right: 5px;
+}
+
+
+/* =========================================
+   VALIDATION
+========================================= */
+
+.error {
+    display: block;
+    color: #dc3545;
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 5px;
+    min-height: 18px;
+}
+
+.validation-error {
+    border: 2px solid #dc3545 !important;
+    background-color: #fff5f5;
+}
+
+.validation-success {
+    border: 2px solid #22c55e !important;
+}
+
+
+/* =========================================
+   FORM SUCCESS
+========================================= */
+
+.form-success {
+    display: none;
+    background-color: #dcfce7;
+    color: #166534;
+    border: 2px solid #22c55e;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.form-success.show {
+    display: block;
+}
+
+
+/* =========================================
+   FORM BUTTONS
+========================================= */
+
+.submit-button {
+    background-color: #2563eb;
+    color: white;
+    margin: 5px;
+}
+
+.reset-button {
+    background-color: #64748b;
+    color: white;
+    margin: 5px;
+}
+
+.submit-button:hover {
+    background-color: #1e3a8a;
+}
+
+.reset-button:hover {
+    background-color: #475569;
+}
+
+
+/* =========================================
+   GALLERY
+========================================= */
+
+.gallery-intro {
+    margin-bottom: 25px;
+    color: #555;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    width: 100%;
+}
+
+.gallery-item {
+    background-color: #f8faff;
+    border: 1px solid #dbe3f0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease,
+        opacity 0.4s ease;
+    animation: fadeIn 1s ease;
+}
+
+.gallery-item:hover {
+    transform:
+        translateY(-8px)
+        scale(1.02);
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.18);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+    transition:
+        transform 0.5s ease,
+        opacity 0.5s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.08);
+    opacity: 0.85;
+}
+
+.caption {
+    padding: 18px;
+    background-color: white;
+}
+
+.caption h3 {
+    color: #1e3a8a;
+    margin: 0 0 8px 0;
+    font-size: 19px;
+}
+
+.caption p {
+    color: #555;
+    font-size: 14px;
+}
+
+
+/* =========================================
+   MEDIA
+========================================= */
+
+video {
+    width: 500px;
+    max-width: 100%;
+    border-radius: 8px;
+    transition: transform 0.4s ease;
+}
+
+video:hover {
+    transform: scale(1.02);
+}
+
+audio {
+    max-width: 100%;
+}
+
+
+/* =========================================
+   API EMPLOYEE DATA
+========================================= */
+
+#apiEmployees {
+    border-top: 5px solid #2563eb;
+}
+
+#loadEmployeesButton {
+    background-color: #2563eb;
+    color: white;
+    margin: 10px 0 20px 0;
+}
+
+.loading {
+    display: none;
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #eff6ff;
+    color: #1e3a8a;
+    border-left: 5px solid #2563eb;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.loading.show {
+    display: block;
+}
+
+.api-error {
+    display: none;
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #fff5f5;
+    color: #dc3545;
+    border-left: 5px solid #dc3545;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.api-error.show {
+    display: block;
+}
+
+#apiEmployeeTable {
+    display: none;
+}
+
+#apiEmployeeTable.show {
+    display: table;
+}
+
+
+/* =========================================
+   CONTACT
+========================================= */
+
+#contact a {
+    color: #2563eb;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#contact a:hover {
+    color: #dc3545;
+}
+
+
+/* =========================================
+   HELP BUTTON
+========================================= */
+
+.help-button {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background-color: #dc3545;
+    color: white;
+    padding: 14px 20px;
+    border-radius: 30px;
+    font-weight: bold;
+    z-index: 2000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.help-button:hover {
+    background-color: #b02a37;
+    transform:
+        scale(1.08)
+        translateY(-3px);
+}
+
+
+/* =========================================
+   NOTIFICATION
+========================================= */
+
+.notification {
+    position: fixed;
+    top: 80px;
+    right: 20px;
+    background-color: #16a34a;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+    opacity: 0;
+    pointer-events: none;
+    z-index: 3000;
+}
+
+.notification.show {
+    animation:
+        notificationAnimation 3s ease;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+    background-color: #172554;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
+
+@media screen and (max-width: 900px) {
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    section {
+        width: 94%;
+        padding: 22px;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .gallery-item img {
+        height: 200px;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media screen and (max-width: 600px) {
+
+    header {
+        padding: 25px 12px;
+    }
+
+    header h1 {
+        font-size: 23px;
+    }
+
+    header p {
+        font-size: 14px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 5px;
+        padding: 10px;
+    }
+
+    nav a {
+        text-align: center;
+        width: 100%;
+        font-size: 14px;
+    }
+
+    section {
+        width: 95%;
+        padding: 15px;
+        margin: 18px auto;
+    }
+
+    section h2 {
+        font-size: 21px;
+    }
+
+    #home img {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .employee-container {
+        padding: 15px;
+    }
+
+    .employee-info {
+        left: 0;
+        width: 100%;
+    }
+
+    .employee-status {
+        position: static;
+        display: inline-block;
+        margin-top: 12px;
+    }
+
+    .table-container {
+        overflow-x: auto;
+    }
+
+    table {
+        min-width: 650px;
+        font-size: 12px;
+    }
+
+    th,
+    td {
+        padding: 7px;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .gallery-item img {
+        height: 200px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="date"],
+    input[type="number"],
+    input[type="file"],
+    select,
+    textarea {
+        max-width: 100%;
+    }
+
+    .submit-button,
+    .reset-button {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .help-button {
+        right: 10px;
+        bottom: 10px;
+        font-size: 12px;
+        padding: 10px 14px;
+    }
+
+    .notification {
+        left: 15px;
+        right: 15px;
+        top: 70px;
+        text-align: center;
+    }
+
+}

@@ -1,0 +1,332 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  }
+
+html {
+scroll-behavior: smooth;
+}
+
+body {
+background-color: #f4f7fc;
+color: #333;
+line-height: 1.6;
+}
+
+/* Header Section */
+
+header {
+background: linear-gradient(135deg, #141e46, #2855a6);
+color: white;
+text-align: center;
+padding: 40px 20px;
+}
+
+header h1 {
+font-size: 36px;
+margin-bottom: 10px;
+letter-spacing: 1px;
+}
+
+header p {
+font-size: 17px;
+color: #dce6ff;
+}
+
+/* Navigation Bar */
+
+nav {
+background-color: #172554;
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+padding: 15px;
+position: sticky;
+top: 0;
+z-index: 100;
+}
+
+nav a {
+color: white;
+text-decoration: none;
+padding: 10px 22px;
+font-size: 16px;
+font-weight: bold;
+transition: 0.3s;
+}
+
+nav a:hover {
+background-color: #3b82f6;
+border-radius: 5px;
+}
+
+/* Horizontal Line */
+
+hr {
+border: none;
+height: 2px;
+background-color: #dce3f0;
+margin: 20px 0;
+}
+
+/* Common Section Styling */
+
+section {
+background-color: white;
+margin: 30px auto;
+padding: 30px;
+width: 90%;
+max-width: 1100px;
+border-radius: 12px;
+box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+section h2 {
+color: #1e3a8a;
+font-size: 27px;
+margin-bottom: 20px;
+border-bottom: 3px solid #3b82f6;
+padding-bottom: 10px;
+}
+
+section h3 {
+color: #2563a6;
+margin: 20px 0 12px;
+}
+
+/* Home Section */
+
+#home {
+text-align: center;
+}
+
+#home img {
+max-width: 100%;
+height: auto;
+border-radius: 12px;
+margin: 20px 0;
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+#home p {
+font-size: 17px;
+line-height: 1.8;
+color: #555;
+}
+
+/* Employee Table */
+
+table {
+width: 100%;
+border-collapse: collapse;
+margin-top: 20px;
+text-align: center;
+overflow: hidden;
+}
+
+table th {
+background-color: #1e3a8a;
+color: white;
+padding: 15px;
+font-size: 15px;
+}
+
+table td {
+padding: 13px;
+border: 1px solid #ddd;
+}
+
+table tr:nth-child(even) {
+background-color: #eff6ff;
+}
+
+table tr:hover {
+background-color: #dbeafe;
+transition: 0.3s;
+}
+
+/* Department Section */
+
+#departments p {
+margin-bottom: 15px;
+}
+
+#departments ul,
+#departments ol {
+padding-left: 35px;
+margin: 15px 0;
+}
+
+#departments li {
+padding: 6px;
+font-size: 16px;
+}
+
+#departments li:hover {
+color: #2563eb;
+}
+
+/* Application Form */
+
+form {
+margin-top: 20px;
+}
+
+fieldset {
+border: 2px solid #cbd5e1;
+border-radius: 10px;
+padding: 20px;
+margin-bottom: 20px;
+background-color: #f8faff;
+}
+
+legend {
+color: #1e40af;
+font-weight: bold;
+font-size: 18px;
+padding: 5px 12px;
+}
+
+form p {
+margin: 15px 0;
+}
+
+label {
+font-weight: bold;
+color: #334155;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="number"],
+input[type="file"],
+select,
+textarea {
+width: 100%;
+max-width: 500px;
+padding: 12px;
+margin-top: 7px;
+border: 1px solid #cbd5e1;
+border-radius: 6px;
+font-size: 15px;
+background-color: white;
+outline: none;
+transition: 0.3s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+border-color: #3b82f6;
+box-shadow: 0 0 5px rgba(59, 130, 246, 0.4);
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+margin: 10px 5px;
+accent-color: #2563eb;
+}
+
+textarea {
+resize: vertical;
+}
+
+/* Submit and Reset Buttons */
+
+input[type="submit"],
+input[type="reset"] {
+padding: 12px 25px;
+border: none;
+border-radius: 6px;
+font-size: 16px;
+font-weight: bold;
+cursor: pointer;
+margin: 5px;
+transition: 0.3s;
+}
+
+input[type="submit"] {
+background-color: #2563eb;
+color: white;
+}
+
+input[type="submit"]:hover {
+background-color: #1e40af;
+transform: translateY(-2px);
+}
+
+input[type="reset"] {
+background-color: #64748b;
+color: white;
+}
+
+input[type="reset"]:hover {
+background-color: #334155;
+transform: translateY(-2px);
+}
+
+/* Media Section */
+
+#media video {
+max-width: 100%;
+border-radius: 10px;
+margin: 10px 0;
+}
+
+#media audio {
+width: 100%;
+max-width: 450px;
+margin: 10px 0;
+}
+
+/* Contact Section */
+
+#contact article {
+line-height: 2;
+}
+
+#contact a {
+color: #2563eb;
+text-decoration: none;
+font-weight: bold;
+}
+
+#contact a:hover {
+color: #1e40af;
+text-decoration: underline;
+}
+
+/* Footer Section */
+
+footer {
+background-color: #172554;
+color: white;
+text-align: center;
+padding: 25px;
+margin-top: 30px;
+}
+
+footer p {
+margin: 5px;
+font-size: 15px;
+}
+
+/* Responsive Design */
+
+@media screen and (max-width: 768px) {
+
+header h1 {
+    font-size: 27px;
+}
+
+nav {
+    flex-direction: column;
+    text-align: center;
+}
+}

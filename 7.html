@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Employee Management System</title>
+
+    <link rel="stylesheet" href="C:\Users\Dharshni\OneDrive\Desktop\WEB TECH\7.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================
+     HEADER
+========================================= -->
+
+<header>
+
+    <h1>Employee Management System</h1>
+
+    <p>
+        Manage employee details, departments, designations
+        and contact information
+    </p>
+
+</header>
+
+
+
+<!-- =========================================
+     NAVIGATION BAR
+     STICKY POSITIONING
+========================================= -->
+
+<nav>
+
+    <a href="#home">Home</a>
+
+    <a href="#employees">Employees</a>
+
+    <a href="#departments">Departments</a>
+
+    <a href="#application">Application</a>
+
+    <a href="#gallery">Gallery</a>
+
+    <a href="#media">Media</a>
+
+    <a href="#contact">Contact</a>
+
+</nav>
+
+
+
+<!-- =========================================
+     FIXED POSITIONING
+========================================= -->
+
+<div class="help-button">
+
+    Help &amp; Support
+
+</div>
+
+
+
+<!-- =========================================
+     HOME SECTION
+========================================= -->
+
+<section id="home">
+
+    <h2>Welcome to Employee Management</h2>
+
+    <img src="C:\Users\Dharshni\Downloads\pexels-yankrukov-8837374.jpg"
+         alt="Employees working together"
+         width="500">
+
+    <p>
+
+        The Employee Management System is a simple webpage
+        designed to display and organize employee information
+        in an easy and structured way.
+
+    </p>
+
+</section>
+
+
+
+<!-- =========================================
+     EMPLOYEE DETAILS
+========================================= -->
+
+<section id="employees">
+
+    <h2>Employee Details</h2>
+
+    <h3>Employee Information</h3>
+
+
+    <!-- =====================================
+         RELATIVE POSITIONING
+    ====================================== -->
+
+    <div class="employee-container">
+
+        <div class="employee-info">
+
+            <h3>
+                Employee Overview
+            </h3>
+
+            <p>
+
+                Our employees work together across different
+                departments to achieve organizational goals.
+
+            </p>
+
+        </div>
+
+
+        <!-- =================================
+             ABSOLUTE POSITIONING
+        ================================== -->
+
+        <span class="employee-status">
+
+            Active Employees
+
+        </span>
+
+    </div>
+
+
+
+    <!-- =====================================
+         STATIC POSITIONING
+    ====================================== -->
+
+    <table>
+
+        <tr>
+
+            <th>Employee ID</th>
+
+            <th>Name</th>
+
+            <th>Department</th>
+
+            <th>Designation</th>
+
+            <th>Email</th>
+
+        </tr>
+
+
+        <tr>
+
+            <td>EMP001</td>
+
+            <td>Nithika K</td>
+
+            <td>IT</td>
+
+            <td>Software Developer</td>
+
+            <td>Nithika@company.com</td>
+
+        </tr>
+
+
+        <tr>
+
+            <td>EMP002</td>
+
+            <td>Misty A</td>
+
+            <td>HR</td>
+
+            <td>HR Executive</td>
+
+            <td>misty@company.com</td>
+
+        </tr>
+
+
+        <tr>
+
+            <td>EMP003</td>
+
+            <td>Blessy W</td>
+
+            <td>Finance</td>
+
+            <td>Accountant</td>
+
+            <td>blessy@company.com</td>
+
+        </tr>
+
+
+        <tr>
+
+            <td>EMP004</td>
+
+            <td>Tanya S</td>
+
+            <td>Marketing</td>
+
+            <td>Marketing Executive</td>
+
+            <td>tanya@company.com</td>
+
+        </tr>
+
+    </table>
+
+</section>
+
+
+
+<!-- =========================================
+     DEPARTMENTS
+========================================= -->
+
+<section id="departments">
+
+    <h2>Departments</h2>
+
+    <p>
+
+        Our organization consists of the following departments:
+
+    </p>
+
+
+    <ul>
+
+        <li>
+            Information Technology
+        </li>
+
+        <li>
+            Human Resources
+        </li>
+
+        <li>
+            Finance
+        </li>
+
+        <li>
+            Marketing
+        </li>
+
+        <li>
+            Sales
+        </li>
+
+    </ul>
+
+
+
+    <h3>
+        Employee Responsibilities
+    </h3>
+
+
+    <ol>
+
+        <li>
+            Complete assigned tasks on time.
+        </li>
+
+        <li>
+            Maintain professional communication.
+        </li>
+
+        <li>
+            Follow company policies.
+        </li>
+
+        <li>
+            Work effectively with the team.
+        </li>
+
+    </ol>
+
+
+
+    <!-- =====================================
+         RELATIVE POSITIONING
+    ====================================== -->
+
+    <div class="department-note">
+
+        <strong>
+            Department Notice:
+        </strong>
+
+        <p>
+
+            All departments must coordinate with each other
+            for smooth company operations.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     APPLICATION FORM
+========================================= -->
+
+<section id="application">
+
+    <h2>
+        Employee Application Form
+    </h2>
+
+
+    <form>
+
+
+        <fieldset>
+
+            <legend>
+                Personal Information
+            </legend>
+
+
+            <p>
+
+                <label for="fullname">
+                    Full Name:
+                </label>
+
+                <br>
+
+                <input type="text"
+                       id="fullname"
+                       name="fullname"
+                       required>
+
+            </p>
+
+
+            <p>
+
+                <label for="dob">
+                    Date of Birth:
+                </label>
+
+                <br>
+
+                <input type="date"
+                       id="dob"
+                       name="dob">
+
+            </p>
+
+
+            <p>
+
+                <label>
+                    Gender:
+                </label>
+
+                <br>
+
+
+                <input type="radio"
+                       id="male"
+                       name="gender"
+                       value="Male">
+
+                <label for="male">
+                    Male
+                </label>
+
+
+                <input type="radio"
+                       id="female"
+                       name="gender"
+                       value="Female">
+
+                <label for="female">
+                    Female
+                </label>
+
+
+                <input type="radio"
+                       id="other"
+                       name="gender"
+                       value="Other">
+
+                <label for="other">
+                    Other
+                </label>
+
+            </p>
+
+        </fieldset>
+
+
+
+        <fieldset>
+
+            <legend>
+                Contact Information
+            </legend>
+
+
+            <p>
+
+                <label for="email">
+                    Email:
+                </label>
+
+                <br>
+
+                <input type="email"
+                       id="email"
+                       name="email"
+                       required>
+
+            </p>
+
+
+            <p>
+
+                <label for="phone">
+                    Phone Number:
+                </label>
+
+                <br>
+
+                <input type="tel"
+                       id="phone"
+                       name="phone"
+                       required>
+
+            </p>
+
+
+            <p>
+
+                <label for="address">
+                    Address:
+                </label>
+
+                <br>
+
+                <textarea id="address"
+                          name="address"
+                          rows="4"></textarea>
+
+            </p>
+
+        </fieldset>
+
+
+
+        <fieldset>
+
+            <legend>
+                Job Information
+            </legend>
+
+
+            <p>
+
+                <label for="department">
+                    Department:
+                </label>
+
+                <br>
+
+
+                <select id="department"
+                        name="department"
+                        required>
+
+                    <option value="">
+                        -- Select Department --
+                    </option>
+
+                    <option value="IT">
+                        Information Technology
+                    </option>
+
+                    <option value="HR">
+                        Human Resources
+                    </option>
+
+                    <option value="Finance">
+                        Finance
+                    </option>
+
+                    <option value="Marketing">
+                        Marketing
+                    </option>
+
+                    <option value="Sales">
+                        Sales
+                    </option>
+
+                </select>
+
+            </p>
+
+
+            <p>
+
+                <label for="designation">
+                    Designation:
+                </label>
+
+                <br>
+
+                <input type="text"
+                       id="designation"
+                       name="designation"
+                       required>
+
+            </p>
+
+
+            <p>
+
+                <label for="experience">
+                    Years of Experience:
+                </label>
+
+                <br>
+
+                <input type="number"
+                       id="experience"
+                       name="experience"
+                       min="0"
+                       max="50">
+
+            </p>
+
+
+            <p>
+
+                <label for="joiningdate">
+                    Preferred Joining Date:
+                </label>
+
+                <br>
+
+                <input type="date"
+                       id="joiningdate"
+                       name="joiningdate">
+
+            </p>
+
+        </fieldset>
+
+
+
+        <fieldset>
+
+            <legend>
+                Additional Information
+            </legend>
+
+
+            <p>
+
+                <label for="resume">
+                    Upload Resume:
+                </label>
+
+                <br>
+
+                <input type="file"
+                       id="resume"
+                       name="resume">
+
+            </p>
+
+
+            <p>
+
+                <label for="message">
+                    Why should we hire you?
+                </label>
+
+                <br>
+
+                <textarea id="message"
+                          name="message"
+                          rows="5"></textarea>
+
+            </p>
+
+
+            <p>
+
+                <input type="checkbox"
+                       id="declaration"
+                       name="declaration"
+                       required>
+
+                <label for="declaration">
+
+                    I confirm that the information provided is correct.
+
+                </label>
+
+            </p>
+
+        </fieldset>
+
+
+
+        <input type="submit"
+               value="Submit Application">
+
+
+        <input type="reset"
+               value="Reset">
+
+    </form>
+
+</section>
+
+
+
+<!-- =========================================
+     INDUSTRY-SPECIFIC IMAGE GALLERY
+========================================= -->
+
+<section id="gallery">
+
+    <h2>
+        Employee &amp; Workplace Gallery
+    </h2>
+
+    <p class="gallery-intro">
+
+        Explore our workplace, employee collaboration,
+        technology, meetings and professional environment.
+
+    </p>
+
+
+    <div class="gallery">
+
+
+        <!-- Gallery Image 1 -->
+
+        <div class="gallery-item">
+
+            <img src="https://img.magnific.com/free-photo/successful-african-american-employee-manages-financial-planning_482257-122600.jpg?semt=ais_hybrid&w=740&q=80"
+                 alt="Employees collaborating in the workplace">
+
+            <div class="caption">
+
+                <h3>
+                    Team Collaboration
+                </h3>
+
+                <p>
+                    Employees working together to achieve
+                    organizational goals.
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Gallery Image 2 -->
+
+        <div class="gallery-item">
+
+            <img src="https://img.magnific.com/free-photo/business-meeting-office_1268-21523.jpg?semt=ais_hybrid&w=740&q=80"
+                 alt="Professional employee team meeting">
+
+            <div class="caption">
+
+                <h3>
+                    Team Meeting
+                </h3>
+
+                <p>
+                    Professional meetings help teams plan
+                    projects and make decisions.
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Gallery Image 3 -->
+
+        <div class="gallery-item">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUUgi2yJhaYFQPVG0y7rpislEUMqS1qNAvzhqMfffpAg&s=10"
+                 alt="Employees working with technology">
+
+            <div class="caption">
+
+                <h3>
+                    Technology &amp; IT
+                </h3>
+
+                <p>
+                    Employees using modern technology for
+                    efficient business operations.
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Gallery Image 4 -->
+
+        <div class="gallery-item">
+
+            <img src="https://img.magnific.com/premium-photo/video-indian-employees-sitting-chair-discussing-project-working-together-pro-video_658385-210.jpg"
+                 alt="Employees discussing a business project">
+
+            <div class="caption">
+
+                <h3>
+                    Project Planning
+                </h3>
+
+                <p>
+                    Teams discuss project requirements,
+                    progress and future activities.
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Gallery Image 5 -->
+
+        <div class="gallery-item">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwXryvFJ15UGduOqXx3i6zYT1-LKo9jtZRter7i-vIyg&s=10"
+                 alt="Employees in a professional workplace">
+
+            <div class="caption">
+
+                <h3>
+                    Professional Workplace
+                </h3>
+
+                <p>
+                    A productive environment supports
+                    employee performance and growth.
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Gallery Image 6 -->
+
+        <div class="gallery-item">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoB5NUoHCO25juS3ATgzCKhfoDIroEo-3Wvj-CwYmFrw&s=10"
+                 alt="Employees communicating with colleagues">
+
+            <div class="caption">
+
+                <h3>
+                    Employee Communication
+                </h3>
+
+                <p>
+                    Effective communication improves teamwork
+                    and workplace productivity.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     MEDIA SECTION
+========================================= -->
+
+<section id="media">
+
+    <h2>
+        Company Media
+    </h2>
+
+
+    <h3>
+        Company Video
+    </h3>
+
+    <video width="400" controls>
+
+        <source src="5438973-uhd_2160_3840_25fps.mp4"
+                type="video/mp4">
+
+        Your browser does not support the video tag.
+
+    </video>
+
+
+
+    <h3>
+        Company Audio
+    </h3>
+
+    <audio controls>
+
+        <source src="2026-09-08-234135_165131.mp3"
+                type="audio/mpeg">
+
+        Your browser does not support the audio element.
+
+    </audio>
+
+</section>
+
+
+
+<!-- =========================================
+     CONTACT SECTION
+========================================= -->
+
+<section id="contact">
+
+    <h2>
+        Contact Information
+    </h2>
+
+
+    <p>
+
+        <strong>Company:</strong>
+        XYZ Technologies
+
+    </p>
+
+
+    <p>
+
+        <strong>Email:</strong>
+
+        <a href="mailto:hr@xyztechnologies.com">
+
+            hr@xyztechnologies.com
+
+        </a>
+
+    </p>
+
+
+    <p>
+
+        <strong>Phone:</strong>
+        +91 98765 43210
+
+    </p>
+
+
+    <p>
+
+        Visit our
+
+        <a href="https://www.google.com"
+           target="_blank">
+
+            Company Website
+
+        </a>
+
+        for more information.
+
+    </p>
+
+</section>
+
+
+
+<!-- =========================================
+     FOOTER
+========================================= -->
+
+<footer>
+
+    <p>
+        &copy; 2026 XYZ Technologies
+    </p>
+
+    <p>
+        Employee Management System |
+        All Rights Reserved
+    </p>
+
+</footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,603 @@
+/* =========================================
+   GENERAL STYLING
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fc;
+    color: #333;
+}
+
+
+/* =========================================
+   HEADER STYLING
+========================================= */
+
+header {
+    background-color: #1e3a8a;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+
+/* =========================================
+   NAVIGATION BAR
+   STICKY POSITIONING
+========================================= */
+
+nav {
+
+    display: flex;
+
+    flex-direction: row;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 25px;
+
+    flex-wrap: wrap;
+
+    background-color: #172554;
+
+    padding: 15px;
+
+
+    /* FIVE CSS POSITIONING TECHNIQUES */
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+}
+
+
+/* Navigation Links */
+
+nav a {
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    padding: 10px 20px;
+
+    border-radius: 5px;
+
+    transition: 0.3s;
+}
+
+
+/* Hover Effect */
+
+nav a:hover {
+    background-color: #3b82f6;
+
+    color: white;
+}
+
+
+/* =========================================
+   SECTION STYLING
+========================================= */
+
+section {
+    background-color: white;
+
+    width: 90%;
+
+    margin: 25px auto;
+
+    padding: 25px;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 3px 10px rgba(0,0,0,0.1);
+}
+
+section h2 {
+    color: #1e3a8a;
+
+    margin-bottom: 15px;
+}
+
+section h3 {
+    color: #2563a6;
+
+    margin: 15px 0;
+}
+
+
+/* =========================================
+   HOME SECTION
+========================================= */
+
+#home {
+    text-align: center;
+}
+
+#home img {
+    max-width: 100%;
+
+    height: auto;
+
+    margin: 15px;
+
+    border-radius: 10px;
+}
+
+
+/* =========================================
+   EMPLOYEE SECTION
+========================================= */
+
+
+/*
+   RELATIVE POSITIONING
+
+   This container becomes the reference
+   point for the absolute status label.
+*/
+
+.employee-container {
+
+    position: relative;
+
+    background-color: #f8faff;
+
+    border: 2px solid #dbe3f0;
+
+    border-radius: 8px;
+
+    padding: 25px;
+
+    margin-bottom: 25px;
+}
+
+
+/*
+   RELATIVE POSITIONING
+
+   The employee information is moved
+   slightly from its original position.
+*/
+
+.employee-info {
+
+    position: relative;
+
+    left: 15px;
+
+    top: 5px;
+
+    width: 85%;
+
+    padding: 15px;
+
+    background-color: #eef5ff;
+
+    border-left: 5px solid #2563eb;
+
+    border-radius: 5px;
+}
+
+
+/*
+   ABSOLUTE POSITIONING
+
+   This label is positioned relative
+   to .employee-container.
+*/
+
+.employee-status {
+
+    position: absolute;
+
+    top: 20px;
+
+    right: 20px;
+
+    background-color: #22c55e;
+
+    color: white;
+
+    padding: 8px 15px;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+
+    font-weight: bold;
+}
+
+
+/* =========================================
+   EMPLOYEE TABLE
+   STATIC POSITIONING
+========================================= */
+
+
+/*
+   position: static is the default
+   positioning of an element.
+
+   The table remains in the normal
+   document flow.
+*/
+
+table {
+
+    position: static;
+
+    width: 100%;
+
+    border-collapse: collapse;
+}
+
+
+/* Table Header */
+
+th {
+    background-color: #1e3a8a;
+
+    color: white;
+}
+
+
+/* Table Cells */
+
+th,
+td {
+    border: 1px solid #ccc;
+
+    padding: 12px;
+
+    text-align: center;
+}
+
+
+/* Table Rows */
+
+tr:nth-child(even) {
+    background-color: #eff6ff;
+}
+
+
+/* =========================================
+   DEPARTMENT LIST
+========================================= */
+
+ul,
+ol {
+    padding-left: 30px;
+
+    margin: 15px 0;
+}
+
+li {
+    padding: 5px;
+}
+
+
+/* =========================================
+   RELATIVE POSITIONING
+   DEPARTMENT NOTICE
+========================================= */
+
+.department-note {
+
+    position: relative;
+
+    left: 20px;
+
+    margin-top: 20px;
+
+    width: 90%;
+
+    padding: 18px;
+
+    background-color: #eaf4ff;
+
+    border-left: 5px solid #2563eb;
+
+    border-radius: 6px;
+}
+
+.department-note strong {
+    color: #1e3a8a;
+}
+
+
+/* =========================================
+   APPLICATION FORM
+========================================= */
+
+fieldset {
+
+    border: 2px solid #ccc;
+
+    border-radius: 8px;
+
+    padding: 20px;
+
+    margin-bottom: 20px;
+}
+
+legend {
+
+    color: #1e3a8a;
+
+    font-weight: bold;
+
+    padding: 5px;
+}
+
+form p {
+
+    margin: 15px 0;
+}
+
+input,
+select,
+textarea {
+
+    padding: 10px;
+
+    margin-top: 5px;
+
+    border-radius: 5px;
+
+    border: 1px solid #ccc;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="number"],
+input[type="file"],
+select,
+textarea {
+
+    width: 100%;
+
+    max-width: 500px;
+}
+
+
+/* =========================================
+   FORM BUTTONS
+========================================= */
+
+input[type="submit"],
+input[type="reset"] {
+
+    background-color: #2563eb;
+
+    color: white;
+
+    border: none;
+
+    padding: 12px 20px;
+
+    cursor: pointer;
+
+    margin: 5px;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+
+    background-color: #1e3a8a;
+}
+
+
+/* =========================================
+   MEDIA
+========================================= */
+
+video {
+
+    max-width: 100%;
+
+    border-radius: 8px;
+}
+
+audio {
+
+    max-width: 100%;
+}
+
+
+/* =========================================
+   CONTACT
+========================================= */
+
+#contact a {
+
+    color: #2563eb;
+
+    text-decoration: none;
+}
+
+#contact a:hover {
+
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   FIXED POSITIONING
+========================================= */
+
+
+/*
+   This button remains fixed at the
+   bottom-right corner of the screen
+   even when the webpage is scrolled.
+*/
+
+.help-button {
+
+    position: fixed;
+
+    right: 20px;
+
+    bottom: 20px;
+
+    background-color: #dc3545;
+
+    color: white;
+
+    padding: 14px 20px;
+
+    border-radius: 30px;
+
+    font-weight: bold;
+
+    z-index: 2000;
+
+    box-shadow:
+        0 4px 10px rgba(0,0,0,0.3);
+
+    cursor: pointer;
+}
+
+.help-button:hover {
+
+    background-color: #b02a37;
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+
+    background-color: #172554;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+}
+
+
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
+
+@media screen and (max-width: 600px) {
+
+    nav {
+
+        flex-direction: column;
+
+        justify-content: center;
+
+        align-items: stretch;
+
+        gap: 10px;
+    }
+
+
+    nav a {
+
+        text-align: center;
+
+        width: 100%;
+    }
+
+
+    header h1 {
+
+        font-size: 24px;
+    }
+
+
+    section {
+
+        width: 95%;
+
+        padding: 15px;
+    }
+
+
+    table {
+
+        font-size: 12px;
+
+        display: block;
+
+        overflow-x: auto;
+    }
+
+
+    th,
+    td {
+
+        padding: 6px;
+    }
+
+
+    .employee-info {
+
+        left: 0;
+
+        width: 100%;
+    }
+
+
+    .department-note {
+
+        left: 0;
+
+        width: 100%;
+    }
+
+
+    .employee-status {
+
+        top: 10px;
+
+        right: 10px;
+
+        font-size: 11px;
+
+        padding: 6px 10px;
+    }
+
+
+    .help-button {
+
+        right: 10px;
+
+        bottom: 10px;
+
+        font-size: 12px;
+
+        padding: 11px 15px;
+    }
+
+}

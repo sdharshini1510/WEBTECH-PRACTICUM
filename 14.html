@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Employee Management System</title>
+
+    <link rel="stylesheet" href="C:\Users\Dharshni\OneDrive\Desktop\WEB TECH\14.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+        <h1>Employee Management System</h1>
+
+        <p>
+            Manage employees, departments, applications and tasks
+            efficiently in one place.
+        </p>
+    </header>
+
+
+    <!-- ================= NAVIGATION ================= -->
+
+    <nav>
+
+        <a href="#home">Home</a>
+        <a href="#employees">Employees</a>
+        <a href="#departments">Departments</a>
+        <a href="#application">Application</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#media">Media</a>
+        <a href="#apiEmployees">API Employees</a>
+        <a href="#tasks">Task Manager</a>
+        <a href="#contact">Contact</a>
+
+    </nav>
+
+
+    <!-- ================= HOME ================= -->
+
+    <section id="home" class="animated-section">
+
+        <h2>Welcome to Employee Management</h2>
+
+        <div class="home-container">
+
+            <img
+                src="C:\Users\Dharshni\Downloads\pexels-yankrukov-8837374.jpg"
+
+                alt="Employee Team">
+
+            <div>
+
+                <p>
+                    Welcome to our Employee Management System.
+                    This system helps organizations manage employee
+                    information, departments, applications and tasks.
+                </p>
+
+                <button id="welcomeButton">
+                    Welcome
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= EMPLOYEES ================= -->
+
+    <section id="employees" class="animated-section">
+
+        <h2>Employee Details</h2>
+
+        <div class="employee-container">
+
+            <div class="employee-status">
+
+                <h3>Current Employees</h3>
+
+                <p>
+                    Total Employees: <strong>4</strong>
+                </p>
+
+                <p>
+                    Active Employees: <strong>4</strong>
+                </p>
+
+            </div>
+
+
+            <table>
+
+                <thead>
+
+                    <tr>
+                        <th>Employee ID</th>
+                        <th>Name</th>
+                        <th>Department</th>
+                        <th>Designation</th>
+                        <th>Email</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>EMP001</td>
+                        <td>Nithika</td>
+                        <td>IT</td>
+                        <td>Software Developer</td>
+                        <td>Nithika@company.com</td>
+                    </tr>
+
+                    <tr>
+                        <td>EMP002</td>
+                        <td>Misty</td>
+                        <td>HR</td>
+                        <td>HR Executive</td>
+                        <td>misty@company.com</td>
+                    </tr>
+
+                    <tr>
+                        <td>EMP003</td>
+                        <td>Blessy W</td>
+                        <td>Finance</td>
+                        <td>Accountant</td>
+                        <td>blessy@company.com</td>
+                    </tr>
+
+                    <tr>
+                        <td>EMP004</td>
+                        <td>Tanya S</td>
+                        <td>Marketing</td>
+                        <td>Marketing Executive</td>
+                        <td>tanya@company.com</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        <button id="employeeButton">
+            View Employee Information
+        </button>
+
+
+        <div id="employeeCard" class="hidden-card">
+
+            <h3>Employee Information</h3>
+
+            <p>
+                Our employees work together across different
+                departments to achieve organizational goals.
+            </p>
+
+            <span id="closeEmployeeCard">Close</span>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= DEPARTMENTS ================= -->
+
+    <section id="departments" class="animated-section">
+
+        <h2>Departments</h2>
+
+        <h3>Available Departments</h3>
+
+        <ul>
+
+            <li>Information Technology</li>
+            <li>Human Resources</li>
+            <li>Finance</li>
+            <li>Marketing</li>
+            <li>Operations</li>
+
+        </ul>
+
+
+        <h3>Department Responsibilities</h3>
+
+        <ol>
+
+            <li>Employee Management</li>
+            <li>Financial Management</li>
+            <li>Software Development</li>
+            <li>Marketing and Sales</li>
+            <li>Business Operations</li>
+
+        </ol>
+
+
+        <button id="departmentButton">
+            Show Department Notice
+        </button>
+
+
+        <div id="departmentNotice" class="hidden-card">
+
+            <p>
+                Every department should coordinate effectively
+                and complete assigned responsibilities on time.
+            </p>
+
+        </div>
+
+
+        <!-- QUESTION 14 EXTRA -->
+
+        <div class="department-details-box">
+
+            <details id="departmentDetails">
+
+                <summary>
+                    View Department Guidelines
+                </summary>
+
+                <ul>
+
+                    <li>
+                        Maintain professional communication.
+                    </li>
+
+                    <li>
+                        Complete assigned work on time.
+                    </li>
+
+                    <li>
+                        Coordinate with other departments.
+                    </li>
+
+                    <li>
+                        Follow company policies and procedures.
+                    </li>
+
+                </ul>
+
+            </details>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= APPLICATION FORM ================= -->
+
+    <section id="application" class="animated-section">
+
+        <h2>Employee Application Form</h2>
+
+        <form id="applicationForm">
+
+            <fieldset>
+
+                <legend>Personal Information</legend>
+
+                <label for="fullname">
+                    Full Name:
+                </label>
+
+                <input
+                    type="text"
+                    id="fullname"
+                    name="fullname"
+                    required
+                >
+
+
+                <label for="dob">
+                    Date of Birth:
+                </label>
+
+                <input
+                    type="date"
+                    id="dob"
+                    name="dob"
+                    required
+                >
+
+
+                <label>
+                    Gender:
+                </label>
+
+                <input
+                    type="radio"
+                    name="gender"
+                    value="Male"
+                >
+
+                Male
+
+                <input
+                    type="radio"
+                    name="gender"
+                    value="Female"
+                >
+
+                Female
+
+            </fieldset>
+
+
+            <fieldset>
+
+                <legend>Contact Information</legend>
+
+                <label for="email">
+                    Email:
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                >
+
+
+                <label for="phone">
+                    Phone:
+                </label>
+
+                <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    required
+                >
+
+
+                <label for="address">
+                    Address:
+                </label>
+
+                <textarea
+                    id="address"
+                    name="address"
+                    rows="4"
+                ></textarea>
+
+            </fieldset>
+
+
+            <fieldset>
+
+                <legend>Job Information</legend>
+
+                <label for="department">
+                    Department:
+                </label>
+
+                <select id="department" name="department">
+
+                    <option value="IT">
+                        Information Technology
+                    </option>
+
+                    <option value="HR">
+                        Human Resources
+                    </option>
+
+                    <option value="Finance">
+                        Finance
+                    </option>
+
+                    <option value="Marketing">
+                        Marketing
+                    </option>
+
+                    <option value="Operations">
+                        Operations
+                    </option>
+
+                </select>
+
+
+                <label for="designation">
+                    Designation:
+                </label>
+
+                <input
+                    type="text"
+                    id="designation"
+                    name="designation"
+                >
+
+
+                <label for="experience">
+                    Experience:
+                </label>
+
+                <input
+                    type="number"
+                    id="experience"
+                    name="experience"
+                    min="0"
+                >
+
+
+                <label for="salary">
+                    Expected Salary:
+                </label>
+
+                <input
+                    type="number"
+                    id="salary"
+                    name="salary"
+                >
+
+
+                <label for="joiningDate">
+                    Joining Date:
+                </label>
+
+                <input
+                    type="date"
+                    id="joiningDate"
+                    name="joiningDate"
+                >
+
+            </fieldset>
+
+
+            <fieldset>
+
+                <legend>Additional Information</legend>
+
+                <label for="resume">
+                    Resume:
+                </label>
+
+                <input
+                    type="file"
+                    id="resume"
+                    name="resume"
+                >
+
+
+                <label for="skills">
+                    Skills:
+                </label>
+
+                <input
+                    type="text"
+                    id="skills"
+                    name="skills"
+                >
+
+
+                <label for="message">
+                    Message:
+                </label>
+
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                ></textarea>
+
+
+                <label>
+
+                    <input
+                        type="checkbox"
+                        id="declaration"
+                        required
+                    >
+
+                    I declare that the information provided
+                    is correct.
+
+                </label>
+
+            </fieldset>
+
+
+            <button type="submit">
+                Submit Application
+            </button>
+
+            <button type="reset">
+                Reset
+            </button>
+
+        </form>
+
+
+        <div id="applicationSuccess"></div>
+
+    </section>
+
+
+    <!-- ================= GALLERY ================= -->
+
+    <section id="gallery" class="animated-section">
+
+        <h2>Employee Gallery</h2>
+
+        <div class="gallery">
+
+            <div class="gallery-item">
+
+                <img
+                    src="https://img.magnific.com/free-photo/successful-african-american-employee-manages-financial-planning_482257-122600.jpg?semt=ais_hybrid&w=740&q=80"
+
+                    alt="Team Collaboration"
+                >
+
+                <div class="caption">
+                    Team Collaboration
+                </div>
+
+            </div>
+
+
+            <div class="gallery-item">
+
+                <img
+                    src="https://img.magnific.com/free-photo/business-meeting-office_1268-21523.jpg?semt=ais_hybrid&w=740&q=80"
+                    alt="Team Meeting"
+                >
+
+                <div class="caption">
+                    Team Meeting
+                </div>
+
+            </div>
+
+
+            <div class="gallery-item">
+
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUUgi2yJhaYFQPVG0y7rpislEUMqS1qNAvzhqMfffpAg&s=10"
+                
+                    alt="Technology and IT"
+                >
+
+                <div class="caption">
+                    Technology & IT
+                </div>
+
+            </div>
+
+
+            <div class="gallery-item">
+
+                <img
+                    src="https://img.magnific.com/premium-photo/video-indian-employees-sitting-chair-discussing-project-working-together-pro-video_658385-210.jpg"
+                    alt="Project Planning"
+                >
+
+                <div class="caption">
+                    Project Planning
+                </div>
+
+            </div>
+
+
+            <div class="gallery-item">
+
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwXryvFJ15UGduOqXx3i6zYT1-LKo9jtZRter7i-vIyg&s=10"
+                    alt="Professional Workplace"
+                >
+
+                <div class="caption">
+                    Professional Workplace
+                </div>
+
+            </div>
+
+
+            <div class="gallery-item">
+
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoB5NUoHCO25juS3ATgzCKhfoDIroEo-3Wvj-CwYmFrw&s=10"
+                    alt="Employee Communication"
+                >
+
+                <div class="caption">
+                    Employee Communication
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= MEDIA ================= -->
+
+    <section id="media" class="animated-section">
+
+        <h2>Employee Management Media</h2>
+
+
+        <h3>Company Video</h3>
+
+        <video
+            controls
+            width="500"
+        >
+
+            <source
+                src="5438973-uhd_2160_3840_25fps.mp4"
+                type="video/mp4"
+            >
+
+            Your browser does not support video.
+
+        </video>
+
+
+        <h3>Company Audio</h3>
+
+        <audio controls>
+
+            <source
+                src="2026-09-08-234135_165131.mp3"
+                type="audio/mpeg"
+            >
+
+            Your browser does not support audio.
+
+        </audio>
+
+    </section>
+
+
+    <!-- ================= API EMPLOYEES ================= -->
+
+    <section id="apiEmployees" class="animated-section">
+
+        <h2>Employee Data from API</h2>
+
+        <button id="loadEmployeesButton">
+            Load Employees
+        </button>
+
+
+        <div id="loadingMessage"></div>
+
+        <div id="apiError"></div>
+
+
+        <table id="apiEmployeeTable">
+
+            <thead>
+
+                <tr>
+
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Username</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Company</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="apiEmployeeBody">
+
+            </tbody>
+
+        </table>
+
+    </section>
+
+
+    <!-- ================= TASK MANAGER ================= -->
+
+    <section id="tasks" class="animated-section">
+
+        <h2>Employee Task Manager</h2>
+
+        <div class="task-container">
+
+
+            <!-- TASK FORM -->
+
+            <div class="task-form-container">
+
+                <h3>Add New Task</h3>
+
+                <form id="taskForm">
+
+                    <label for="taskTitle">
+                        Task Title
+                    </label>
+
+                    <input
+                        type="text"
+                        id="taskTitle"
+                        placeholder="Enter task title"
+                        required
+                    >
+
+
+                    <label for="taskEmployee">
+                        Employee
+                    </label>
+
+                    <select id="taskEmployee" required>
+
+                        <option value="">
+                            Select Employee
+                        </option>
+
+                        <option value="Nithika">
+                            Nithika
+                        </option>
+
+                        <option value="Misty">
+                            Misty
+                        </option>
+
+                        <option value="Blessy W">
+                            Blessy W
+                        </option>
+
+                        <option value="Tanya S">
+                            Tanya S
+                        </option>
+
+                    </select>
+
+
+                    <label for="taskDepartment">
+                        Department
+                    </label>
+
+                    <select id="taskDepartment">
+
+                        <option value="IT">
+                            IT
+                        </option>
+
+                        <option value="HR">
+                            HR
+                        </option>
+
+                        <option value="Finance">
+                            Finance
+                        </option>
+
+                        <option value="Marketing">
+                            Marketing
+                        </option>
+
+                    </select>
+
+
+                    <label for="taskPriority">
+                        Priority
+                    </label>
+
+                    <select id="taskPriority">
+
+                        <option value="High">
+                            High
+                        </option>
+
+                        <option value="Medium">
+                            Medium
+                        </option>
+
+                        <option value="Low">
+                            Low
+                        </option>
+
+                    </select>
+
+
+                    <label for="taskStatus">
+                        Status
+                    </label>
+
+                    <select id="taskStatus">
+
+                        <option value="Pending">
+                            Pending
+                        </option>
+
+                        <option value="In Progress">
+                            In Progress
+                        </option>
+
+                        <option value="Completed">
+                            Completed
+                        </option>
+
+                    </select>
+
+
+                    <button
+                        type="submit"
+                        id="addTaskButton"
+                    >
+                        Add Task
+                    </button>
+
+                </form>
+
+            </div>
+
+
+            <!-- SEARCH -->
+
+            <div class="task-search">
+
+                <input
+                    type="text"
+                    id="taskSearch"
+                    placeholder="Search tasks..."
+                >
+
+
+                <select id="taskFilter">
+
+                    <option value="All">
+                        All Tasks
+                    </option>
+
+                    <option value="Pending">
+                        Pending
+                    </option>
+
+                    <option value="In Progress">
+                        In Progress
+                    </option>
+
+                    <option value="Completed">
+                        Completed
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- TASK TABLE -->
+
+            <div class="task-table-container">
+
+                <table id="taskTable">
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Task</th>
+                            <th>Employee</th>
+                            <th>Department</th>
+                            <th>Priority</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody id="taskTableBody">
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+
+            <!-- TASK LIST -->
+
+            <div class="task-list-container">
+
+                <h3>Task List</h3>
+
+                <ul id="taskList"></ul>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACT ================= -->
+
+    <section id="contact" class="animated-section">
+
+        <h2>Contact Us</h2>
+
+        <div class="contact-container">
+
+            <p>
+                <strong>XYZ Technologies</strong>
+            </p>
+
+            <p>
+                Email:
+                hr@xyztechnologies.com
+            </p>
+
+            <p>
+                Phone:
+                +91 98765 43210
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= HELP ================= -->
+
+    <button id="helpButton">
+        Help
+    </button>
+
+
+    <div id="notificationMessage"></div>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <p>
+            &copy; 2026 XYZ Technologies.
+            All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="C:\Users\Dharshni\OneDrive\Desktop\WEB TECH\14.js"></script>
+
+</body>
+
+</html>

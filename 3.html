@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+ <html lang="en">
+     <head>
+         <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+           <title>Employee Management System</title>
+         </head>
+          <body>
+<header>
+    <h1>Employee Management System</h1>
+    <p>Manage employee details, departments, designations and contact information</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a> 
+    <a href="#employees">Employees</a> 
+    <a href="#departments">Departments</a> 
+    <a href="#contact">Contact</a>
+    <a href="#application">Application</a>
+</nav>
+
+<hr>
+
+<section id="home">
+
+    <h2>Welcome to Employee Management</h2>
+
+    <img src="C:\Users\Dharshni\Downloads\pexels-yankrukov-8837374.jpg"
+         alt="Employees working together"
+         width="500">
+
+    <p>
+        The Employee Management System is a simple webpage designed
+        to display and organize employee information in an easy and
+        structured way.
+    </p>
+
+</section>
+
+<hr>
+
+<section id="employees">
+
+    <h2>Employee Details</h2>
+
+    <article>
+
+        <h3>Employee Information</h3>
+
+        <table border="1" cellpadding="10">
+
+            <tr>
+                <th>Employee ID</th>
+                <th>Name</th>
+                <th>Department</th>
+                <th>Designation</th>
+                <th>Email</th>
+            </tr>
+
+            <tr>
+                <td>EMP001</td>
+                <td>Nithika K</td>
+                <td>IT</td>
+                <td>Software Developer</td>
+                <td>Nithika@company.com</td>
+            </tr>
+
+            <tr>
+                <td>EMP002</td>
+                <td>Misty A</td>
+                <td>HR</td>
+                <td>HR Executive</td>
+                <td>misty@company.com</td>
+            </tr>
+
+            <tr>
+                <td>EMP003</td>
+                <td>blessy W</td>
+                <td>Finance</td>
+                <td>Accountant</td>
+                <td>blessy@company.com</td>
+            </tr>
+
+            <tr>
+                <td>EMP004</td>
+                <td>Tanya S</td>
+                <td>Marketing</td>
+                <td>Marketing Executive</td>
+                <td>tanya@company.com</td>
+            </tr>
+
+        </table>
+
+    </article>
+
+</section>
+
+<hr>
+
+<section id="departments">
+
+    <h2>Departments</h2>
+
+    <p>Our organization consists of the following departments:</p>
+
+    <ul>
+        <li>Information Technology</li>
+        <li>Human Resources</li>
+        <li>Finance</li>
+        <li>Marketing</li>
+        <li>Sales</li>
+    </ul>
+
+    <h3>Employee Responsibilities</h3>
+
+    <ol>
+        <li>Complete assigned tasks on time.</li>
+        <li>Maintain professional communication.</li>
+        <li>Follow company policies.</li>
+        <li>Work effectively with the team.</li>
+    </ol>
+
+</section>
+
+<hr>
+
+
+<!-- Employee Application Form -->
+
+<section id="application">
+
+    <h2>Employee Application Form</h2>
+
+    <form>
+
+        <fieldset>
+
+            <legend>Personal Information</legend>
+
+            <p>
+                <label for="fullname">Full Name:</label><br>
+                <input type="text" id="fullname" name="fullname" required>
+            </p>
+
+            <p>
+                <label for="dob">Date of Birth:</label><br>
+                <input type="date" id="dob" name="dob">
+            </p>
+
+            <p>
+                <label>Gender:</label><br>
+
+                <input type="radio" id="male" name="gender" value="Male">
+                <label for="male">Male</label>
+
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female</label>
+
+                <input type="radio" id="other" name="gender" value="Other">
+                <label for="other">Other</label>
+            </p>
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+
+            <legend>Contact Information</legend>
+
+            <p>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required>
+            </p>
+
+            <p>
+                <label for="phone">Phone Number:</label><br>
+                <input type="tel" id="phone" name="phone" required>
+            </p>
+
+            <p>
+                <label for="address">Address:</label><br>
+                <textarea id="address" name="address" rows="4" cols="40"></textarea>
+            </p>
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+
+            <legend>Job Information</legend>
+
+            <p>
+                <label for="department">Department:</label><br>
+
+                <select id="department" name="department" required>
+                    <option value="">-- Select Department --</option>
+                    <option value="IT">Information Technology</option>
+                    <option value="HR">Human Resources</option>
+                    <option value="Finance">Finance</option>
+                    <option value="Marketing">Marketing</option>
+                    <option value="Sales">Sales</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="designation">Designation:</label><br>
+                <input type="text" id="designation" name="designation" required>
+            </p>
+
+            <p>
+                <label for="experience">Years of Experience:</label><br>
+                <input type="number" id="experience" name="experience" min="0" max="50">
+            </p>
+
+            <p>
+                <label for="joiningdate">Preferred Joining Date:</label><br>
+                <input type="date" id="joiningdate" name="joiningdate">
+            </p>
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+
+            <legend>Additional Information</legend>
+
+            <p>
+                <label for="resume">Upload Resume:</label><br>
+                <input type="file" id="resume" name="resume">
+            </p>
+
+            <p>
+                <label for="message">Why should we hire you?</label><br>
+                <textarea id="message" name="message" rows="5" cols="40"></textarea>
+            </p>
+
+            <p>
+                <input type="checkbox" id="declaration" name="declaration" required>
+
+                <label for="declaration">
+                    I confirm that the information provided is correct.
+                </label>
+            </p>
+
+        </fieldset>
+
+        <br>
+
+        <input type="submit" value="Submit Application">
+
+        <input type="reset" value="Reset">
+
+    </form>
+
+</section>
+
+<hr>
+
+<!-- Video and Audio Section -->
+
+<section id="media">
+
+    <h2>Company Media</h2>
+
+    <h3>Company Video</h3>
+
+<video width="400" controls>
+    <source src="C:\Users\Dharshni\Downloads\5438973-uhd_2160_3840_25fps.mp4"type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+<h3>Company Audio</h3>
+
+<audio controls>
+    <source src="C:\Users\Dharshni\Downloads\2026-09-08-234135_165131.mp3"type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
+</section>
+<section id="contact">
+
+    <h2>Contact Information</h2>
+
+    <article>
+
+        <p><strong>Company:</strong> XYZ Technologies</p>
+
+        <p><strong>Email:</strong>
+            <a href="mailto:hr@xyztechnologies.com">
+                hr@xyztechnologies.com
+            </a>
+        </p>
+
+        <p><strong>Phone:</strong> +91 98765 43210</p>
+
+        <p>
+            Visit our
+            <a href="https://www.google.com" target="_blank">
+                Company Website
+            </a>
+            for more information.
+        </p>
+
+    </article>
+
+</section>
+
+<hr>
+
+<footer>
+
+    <p>&copy; 2026 XYZ Technologies</p>
+
+    <p>Employee Management System | All Rights Reserved</p>
+
+</footer>
+
+</body>
+ </html>
